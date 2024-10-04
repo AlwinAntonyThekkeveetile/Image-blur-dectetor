@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Blurriness Checker</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- Correct path to static CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image to Check if it's Blurry</h1>
+        <form action="/upload/" enctype="multipart/form-data" method="post">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit" class="btn">Check Blurriness</button>
+        </form>
+        <p class="description">Upload an image to check if it's blurry or not. Our AI-powered algorithm will analyze the image and provide a result.</p>
+    </div>
+</body>
+</html>
